@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bharath Connects - New India's Social Hub</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/img/tab_logo.png" />
+    <script
+      src="https://kit.fontawesome.com/7e1f33610c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img src="/img/logo.png" alt="logo" class="logo-img" />
+    </header>
+    <main>
+      <section class="sidebar">
+        <div class="sidebar-innerdiv">
+          <div>
+            <a href="/">
+              <div class="home-div">
+                <i class="fa-solid fa-house"></i>
+                <p class="home">Home</p>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a href="/posts/new">
+              <div class="create-div">
+                <i class="fa-solid fa-pen"></i>
+                <p class="create">Create</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="vl"></div>
+      <section class="all-posts">
+        <h1>Your Posts</h1>
+        <hr />
+        <% for (let post of posts) { %>
+        <div class="post-div">
+          <div>
+            <h3>@<%= post.username %></h3>
+            <p class="post-content"><%= post.content %></p>
+            <a href="/posts/<%= post.id %>" class="see">See in detail</a>
+          </div>
+          <div class="post-options">
+            <div class="edit-button">
+              <a href="/posts/<%= post.id %>/edit">
+                <i class="fa-solid fa-pen"></i
+              ></a>
+            </div>
+            <form
+              action="/posts/<%= post.id %>/delete?_method=DELETE"
+              method="POST"
+            >
+              <button type="submit" class="delete-icon">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <hr />
+        <% } %>
+      </section>
+      <div class="vl"></div>
+    </main>
+  </body>
+</html>

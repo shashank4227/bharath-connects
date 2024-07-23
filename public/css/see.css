@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 70px;
+  width: 100%;
+}
+.logo-img {
+  height: 50px;
+}
+.post-details {
+  padding: 20px;
+}

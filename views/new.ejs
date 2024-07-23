@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Post</title>
+    <link rel="stylesheet" href="/css/new.css" />
+    <link rel="icon" href="/img/tab_logo.png" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="/img/tab_logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/img/tab_logo.png" />
+    <script
+      src="https://kit.fontawesome.com/7e1f33610c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img src="/img/logo.png" alt="logo" class="logo-img" />
+    </header>
+    <main>
+      <section class="sidebar">
+        <div class="sidebar-innerdiv">
+          <div>
+            <a href="/">
+              <div class="home-div">
+                <i class="fa-solid fa-house"></i>
+                <p class="home">Home</p>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a href="/posts/new">
+              <div class="create-div">
+                <i class="fa-solid fa-pen"></i>
+                <p class="create">Create</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="vl"></div>
+      <div class="all-posts">
+        <form action="/posts/new" method="POST" class="form-area">
+          <h1>Create a New Post</h1>
+          <div class="user-input">
+            <input
+              type="text"
+              placeholder="Enter Username"
+              name="username"
+              class="username"
+              required
+            />
+          </div>
+          <div class="content-outer-div">
+            <br />
+            <textarea
+              name="content"
+              id="content"
+              rows="10"
+              cols="70"
+              placeholder="Enter content here"
+              class="new-post-content"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="new-post-submit">SUBMIT</button>
+        </form>
+      </div>
+      <div class="vl"></div>
+    </main>
+  </body>
+</html>

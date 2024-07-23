@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.post-div {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  background-color: black;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+}
+.sidebar {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+.home-div {
+  color: black;
+  height: 40px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  margin-left: 10px;
+}
+.sidebar-innerdiv {
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+}
+.create-div {
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.create-div i {
+  color: white;
+}
+.create {
+  margin-left: 10px;
+  color: white;
+}
+.logo-img {
+  height: 50px;
+}
+.vl {
+  width: 2px;
+  height: 89.9vh;
+  background-color: black;
+}
+.all-posts {
+  width: 40%;
+  height: 89.9vh;
+  overflow: auto;
+}
+.all-posts h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.delete-icon {
+  border: none;
+  background-color: red;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  color: white;
+}
+.post-options {
+  display: flex;
+  justify-content: flex-end;
+}
+.edit-button {
+  background-color: rgb(0, 170, 255);
+  color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.edit-button i {
+  color: white;
+}
+button {
+  cursor: pointer;
+}
+.see {
+  font-size: 12px;
+  color: rgb(0, 98, 255);
+  text-decoration: underline;
+}
+.home-div {
+  display: flex;
+}
